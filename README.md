@@ -1,6 +1,6 @@
 2Dgraphing.py plots geometric shapes such as point, line, oval and rectangle.
 
-![Sample image](https://github.com/margaret-hu/2Dgraphing/delaunay.png)
+![Sample image](https://github.com/margaret-hu/2Dgraphing/blob/master/delaunay.png)
 
 Please try
   python3 2Dgraphing.py sample.cg delaunay.cg
