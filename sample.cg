@@ -1,0 +1,43 @@
+# lines begin with # (or a blank line) is ignored
+# line start with " defines a new layer with a format looks like
+#"house b--f
+# The format has the pattern "name color,line_style,fill
+# in the above example the layer_name=house, color_name=blue
+# line_style=dash_line fill=solid_fill
+# 2Dgraphing.py uses black background, with the following foreground choices
+# b (blue) g (green) r (red) c (cyan) m (magenta) y (yellow) w (white)
+# o (orange) p (purple) s (silver) l (lime) t (tan)
+# for the line style there are 4 choices
+# - (solid line) -- (dashed line) -. (dash dot) : (dotted line)
+# for the fill, we have x (cross) f (solid fill) or skip fill totally
+
+# the supported shapes are line, point, rectangle and oval, for example
+# p(-23, 57)
+# rec(2.8, 12.5, 3.5, 20.7) i.e (x1, y1, x2, y2)
+# l(-23, -57.7, 18, 14.9) i.e (poin1_x, point1_y, point2_x, point2_y)
+# oval(-100, -200, 300, 400)
+# fill pattern has no effect on point and line
+
+"bbox w-
+rec(-100, -100, 100, 100)
+
+"quadrant one r--x
+p(18, 25)
+p(72, 90)
+rec(10.5, 18.79, 83.4, 94)
+
+"quadrant two b:f
+oval(-70, 20, -20, 70)
+l(-20, 30, -80, 75)
+
+"quadrant three c-.
+rec(-75.384, -50, -25.78, -20)
+oval(-60, -90, -40, -10) 
+
+"quadrant four m-f
+rec(20, -68.34, 40, 0)
+rec(10, -70, 90, -50.9)
+p(50, -50)
+
+"big width l-
+rec(-90, 30, 300, 70)
