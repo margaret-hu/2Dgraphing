@@ -1,3 +1,5 @@
+Plot 2d graphics for various shapes using pyCairo
+
 2Dgraphing.py plots geometric shapes such as point, line, oval and rectangle.
 
 ![Sample image](https://github.com/margaret-hu/2Dgraphing/blob/master/delaunay.png)
